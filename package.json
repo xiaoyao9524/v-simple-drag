@@ -1,6 +1,6 @@
 {
   "name": "v-simple-drag",
-  "version": "0.0.31",
+  "version": "0.0.341",
   "author": "xy9524",
   "description": "简单的vue拖拽插件",
   "main": "dist/v-simple-drag.js",

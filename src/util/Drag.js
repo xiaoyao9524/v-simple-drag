@@ -26,7 +26,7 @@ class Drag {
     if (!this.drag) {
       return new Throw('未传入参数：drag');
     }
-
+    console.log('内部install: ', this.data);
     // 此次实例的随机ID
     let randomID = randomString(8);
     this.randomID = randomID;
@@ -268,8 +268,10 @@ class Drag {
     }
   }
 
-  reLoad = () => {
+  reLoad = (newData) => {
+    this.data = [...newData];
     this.destroy();
+    console.log('-----');
     this.install();
   }
 }
