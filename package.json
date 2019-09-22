@@ -9,7 +9,7 @@
     "build": "npx webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["v-simple-drag", "vue", "drag"],
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.4.0",

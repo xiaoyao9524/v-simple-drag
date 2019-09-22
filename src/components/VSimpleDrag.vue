@@ -26,7 +26,6 @@
       }
     },
     mounted () {
-      console.log('测试 0.0.341');
       if (this.observe) {
         this.list = [...this.observe];
       }
@@ -44,31 +43,16 @@
         this.$emit('change', data);
       },
       reload () {
-        console.log('reload: ', this.observe);
         this.list = [...this.observe];
         if (this.drag) {
           this.drag.reLoad(this.observe);
         }
       },
-      test () {
-        console.log('install', this.observe);
-        this.drag.install();
-      },
       destroy () {
-        console.log('destroy', this.observe);
         if (this.drag) {
           this.drag.destroy();
         }
       }
-    } // ,
-    // watch: {
-    //   observe: {
-    //     deep: true,
-    //     handler () {
-    //       console.log('watch --');
-    //       this.reload();
-    //     }
-    //   }
-    // }
+    }
   }
 </script>
